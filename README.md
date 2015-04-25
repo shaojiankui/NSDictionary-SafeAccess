@@ -1,5 +1,8 @@
 # NSDictionary-SafeAccess
 非常有助于IOS字典读写的轻量级扩展,Very useful safe accessors for NSDictionary,a lightweight NSDictionary access category
+
+比如网络请求回来的JSON解析成字典后,数据的读取常常因为NULL而程序崩溃,有了SafeAccess
+
 #妈妈再也不用担心NULL啦
 
 #使用方法 
@@ -45,3 +48,6 @@
     [dict setSize:CGSizeMake(111, 111) forKey:@"size"];
     
     [dict setRect:CGRectMake(0, 0, 0, 0) forKey:@"rect"];
+    
+##更多Catgories
+https://github.com/shaojiankui/IOS-Categories
