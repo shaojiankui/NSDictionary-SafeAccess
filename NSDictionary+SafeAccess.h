@@ -1,6 +1,6 @@
 //
 //  NSDictionary+SafeAccess.h
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 15/1/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
@@ -10,10 +10,13 @@
 #import <UIKit/UIKit.h>
 
 @interface NSDictionary (SafeAccess)
+- (BOOL)hasKey:(NSString *)key;
 
 - (NSString*)stringForKey:(id)key;
 
 - (NSNumber*)numberForKey:(id)key;
+
+- (NSDecimalNumber *)decimalNumberForKey:(id)key;
 
 - (NSArray*)arrayForKey:(id)key;
 
@@ -42,6 +45,8 @@
 - (long long)longLongForKey:(id)key;
 
 - (unsigned long long)unsignedLongLongForKey:(id)key;
+
+- (NSDate *)dateForKey:(id)key dateFormat:(NSString *)dateFormat;
 
 //CG
 - (CGFloat)CGFloatForKey:(id)key;
