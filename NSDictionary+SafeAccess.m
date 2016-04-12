@@ -21,6 +21,9 @@
     {
         return nil;
     }
+    if ([[value description] isEqualToString:@"(null)"]) {
+        return nil;
+    }
     if ([value isKindOfClass:[NSString class]]) {
         return (NSString*)value;
     }
